@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">YumFood</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="settings_description">Settings</string>
+    <string name="search_description">Search</string>
+    <string name="recipe_taskbar_label">Recipe</string>
+    <string name="saved_Description">Liked Recipes</string>
+    <string name="settings_taskbar_label">Settings</string>
+
+
+
+    <string name="ingredients">Ingredients</string>
+    <string name="ingredientsDesc">Ingredients Description</string>
+    <string name="ingredientsName">Recipe Name</string>
+    <string name="ingredientsPic">Recipe Picture</string>
+
+
+
+
+    <string name="empty_saved_recipes"><b><big>\nNo recipes saved!\n\nPress the \"like\" button to save recipes to your profile</big></b></string>
+
+    <string name="introduction"><big>Let\'s Cook!</big></string>
+
+
+    <string name="about_headline"><big>About Us</big></string>
+
+
+    <string name="about_body">Welcome to YumFood, the simplest solution for creating a tailored masterpiece every time you cook.
+
+        \n\nYumFood is to provide a stress-free cooking experience for whatever recipe you desire to create. By looking at the randomly generated recipes within a selected filter, YumFood users are not only given inspiration, but a push to also try new things. By creating this application our team envisions cooks to find recipes that can adhere to potential dietary restrictions all while producing yummy food.
+
+        \n\nWe thank you for choosing YumFood as we believe this is the future of all recipe applications.
+
+        \n\n\nSincerely,
+        \nThe YumFood Team, \nHCDD 440.
+    </string>
+
+
+    <string name="api_key">28a9dc3671e449be82f4ef4aef89bbb9</string>
+
+
+    <string name="home">Home</string>
+    <string name="like">Liked</string>
+    <string name="settings">Settings</string>
+    <string name="recipe">Recipe</string>
+
+
+
+
+</resources>

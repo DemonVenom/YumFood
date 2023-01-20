@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/main_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="0dp"
+    android:layout_margin="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_recipe"
+                android:scaleType="fitXY"
+                android:src="@drawable/popcorn_chicken"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:contentDescription="@+id/img_recipe"
+                app:shapeAppearanceOverlay="@style/roundedShape">
+
+            </com.google.android.material.imageview.ShapeableImageView>
+
+            <TextView
+                android:id="@+id/text_title"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:contentDescription="@+id/text_title"
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_source"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/secondaryColor"
+                android:textSize="16sp"
+                android:contentDescription="@+id/text_source"
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageLike"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/imageHome"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@+id/imageHome"
+        android:background="@color/dark_gray"
+        android:contentDescription="@string/like"
+        android:elevation="1dp"
+        app:shapeAppearanceOverlay="@style/circleShape"
+        app:srcCompat="@drawable/ic_baseline_thumb_up_alt_24" />
+
+
+</androidx.cardview.widget.CardView>

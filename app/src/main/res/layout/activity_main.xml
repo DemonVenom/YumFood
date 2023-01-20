@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:text="vegan"
+                android:textSize="12sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:text="vegetarian"
+                android:textSize="12sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:text="gluten free"
+                android:textSize="12sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:text="dairy free"
+                android:textSize="12sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:text="lacto ovo vegetarian"
+                android:textSize="12sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:text="pescatarian"
+                android:textSize="12sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:text="whole 30"
+                android:textSize="12sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:text="fodmap friendly"
+                android:textSize="12sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:text="paleolithic"
+                android:textSize="12sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:text="ketogenic"
+                android:textSize="12sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:text="primal"
+                android:textSize="12sp">
+
+            </Button>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        app:cardElevation="8dp">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:defaultQueryHint="Search Recipes..."
+            app:iconifiedByDefault="false">
+
+        </androidx.appcompat.widget.SearchView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/recycler_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_margin="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageHome"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="false"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/darker_gray"
+            android:contentDescription="@string/home"
+            app:shapeAppearanceOverlay="@style/circleShape"
+            app:srcCompat="@drawable/ic_baseline_home_24" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageLike"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/imageHome"
+            android:layout_marginStart="77dp"
+            android:layout_toEndOf="@+id/imageHome"
+            android:background="@color/dark_gray"
+            android:contentDescription="@string/like"
+            android:elevation="5dp"
+            app:shapeAppearanceOverlay="@style/circleShape"
+            app:srcCompat="@drawable/ic_baseline_thumb_up_alt_24" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageSettings"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="40dp"
+            android:layout_toEndOf="@id/imageLike"
+            android:background="@color/dark_gray"
+            android:contentDescription="@string/settings"
+            app:shapeAppearanceOverlay="@style/circleShape"
+            app:srcCompat="@drawable/ic_baseline_settings_24" />
+
+        <TextView
+            android:id="@+id/recipe_taskbar_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:layout_below="@id/imageHome"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/recipe" />
+
+        <TextView
+            android:id="@+id/liked_taskbar_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:layout_below="@id/imageLike"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/recipe_taskbar_label"
+            android:text="@string/like" />
+
+        <TextView
+            android:id="@+id/settings_taskbar_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:layout_below="@+id/imageSettings"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/liked_taskbar_label"
+            android:text="@string/settings" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/taskbar_background_shadow"
+            android:layout_width="414dp"
+            android:layout_height="108dp"
+            android:elevation="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedShape"
+            app:srcCompat="@color/primaryColor"
+            tools:ignore="ImageContrastCheck" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/taskbar_background"
+            android:layout_width="414dp"
+            android:layout_height="125dp"
+            android:layout_alignParentBottom="true"
+            android:elevation="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedShape"
+            app:srcCompat="@color/light_gray" />
+
+    </RelativeLayout>
+
+</LinearLayout>
