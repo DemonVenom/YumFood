@@ -2,7 +2,8 @@
 
 ## **DESCRIPTION** 
 
-Small Android app that searches for and saves cooking recipes 
+Android app that searches for and saves cooking recipes. Screen reader compatible with Google Speech Services for all text/images (also includes built-in text-to-speech feature). Created using the Spoonacular API.
+
 
 ## **DEMO SCREENSHOTS** 
 
