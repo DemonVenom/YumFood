@@ -45,6 +45,8 @@ Add settings
 
 Add profiles
 
+Fix warped image bug
+
 Fix taskbar bug (only occasionally looks like correct version below)
 
 ![search recipes screen demo image](https://github.com/DemonVenom/YumFood/blob/main/app/src/main/yumfood-demo-taskbar.PNG)
